@@ -1,0 +1,118 @@
+html,
+body {
+  min-width: 290px;
+  color: rgb(84, 84, 90);
+  background-color: rgb(255, 255, 255);
+  line-height: 1.5;
+  font-family: 'Open Sans', Artial, sans-serif;
+}
+
+#sidebarElement {
+  position: fixed;
+  border-right: solid;
+  width: 300px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+h2 {
+  margin: 10px;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: thin;
+  color: rgb(0, 0, 0);
+}
+
+#documentationArea {
+  position: absolute;
+  padding: 20px;
+  margin-left: 310px;
+  margin-bottom: 110px;
+}
+
+#documentationArea h2 {
+  margin: 0px;
+  text-align: left;
+}
+
+#sidebarElement ul {
+  padding: 0;
+  height: 80%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#sidebarElement li {
+  position: relative;
+  border-top: 1px solid;
+  list-style: none;
+  width: 100%;
+  color: rgba(0, 22, 22, 0.4);
+}
+
+#sidebarElement .navItem {
+  display: block;
+  color: rgba(0, 22, 22, 0.4);
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section article {
+  margin: 15px;
+  font-size: 0.96em;
+  color: rgba(0, 22, 22, 0.4);
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+pre {
+  display: block;
+  position: relative;
+  white-space: pre-line;
+  text-align: left;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* "Media queries" settings */
+@media only screen and (max-width: 815px) {
+  /* "Mobile" area */
+  #sidebarElement ul {
+    height: 207px;
+    border: 1px solid;
+  }
+
+  #sidebarElement {
+    position: absolute;
+    border: none;
+    max-height: 275px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid;
+    z-index: 1;
+  }
+
+  #documentationArea {
+    position: relative;
+    margin-top: 270px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and(max-width: 400px) {
+  #documentationArea {
+    margin-left: -10px;
+  }
+}
